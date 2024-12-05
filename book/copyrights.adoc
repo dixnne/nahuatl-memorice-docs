@@ -1,0 +1,7 @@
+[preface]
+[role="copyright"]
+
+== Copyright
+
+© 2024 Cacahuate Studios. Todos los derechos reservados.
+Este documento y su contenido son propiedad de Cacahuate Studios. No se permite la reproducción total o parcial de este documento sin el consentimiento expreso por escrito del autor. La información contenida en este documento es confidencial y está destinada exclusivamente a fines educativos y de desarrollo de proyectos relacionados con la Nintendo eShop.

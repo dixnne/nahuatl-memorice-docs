@@ -1,0 +1,32 @@
+== Matriz de Riesgos  
+
+[cols="3,4,4", options="header, stripes"]  
+|===  
+| Riesgo | Impacto Potencial | Plan de Contingencia  
+
+| Retrasos en el desarrollo  
+| Retraso en el cronograma, afectando la fecha de lanzamiento.  
+| - Priorización de tareas críticas.  
+  - Incremento en horas de trabajo si es necesario.  
+
+| Errores en la lógica del juego  
+| Fallos en las mecánicas que afectan la experiencia del usuario.  
+| - Pruebas unitarias frecuentes.  
+  - Implementación de un proceso de QA riguroso.  
+
+| Problemas de compatibilidad con dispositivos móviles  
+| El juego no funciona correctamente en algunos dispositivos.  
+| - Pruebas en una amplia gama de dispositivos.  
+  - Ajustes específicos para cada plataforma.  
+
+| Desempeño insuficiente en TIC-80 debido a limitaciones de memoria  
+| Posibles bloqueos o ralentización del juego.  
+| - Optimización del uso de recursos (gráficos, música, datos).  
+  - Dividir contenido en cartuchos adicionales si es necesario.  
+
+| Baja adopción de usuarios  
+| Menor cantidad de descargas y jugadores activos.  
+| - Campañas de marketing dirigidas.  
+  - Incorporación de nuevas características basadas en retroalimentación.  
+
+|===  

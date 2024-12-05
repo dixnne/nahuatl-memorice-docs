@@ -1,0 +1,14 @@
+[preface]
+== Prefacio
+
+La lengua y la cultura náhuatl han sido testigos de siglos de historia, resistencia y transformación. En un mundo donde la tecnología avanza a pasos agigantados, la preservación de nuestras raíces culturales se vuelve un desafío y, a la vez, una oportunidad. **Aztlán: Las Islas del Saber** nace como un proyecto que busca tender un puente entre el pasado y el presente, utilizando el poder de los videojuegos para educar y entretener.
+
+Este libro documenta el viaje desde la concepción hasta la creación de un videojuego que no solo es un reto técnico, sino también un homenaje a la rica herencia de la civilización azteca. Aquí encontrarás un relato detallado sobre el desarrollo del juego, sus objetivos pedagógicos, el diseño de mecánicas, y la integración de elementos culturales. También se explora cómo el proyecto busca revitalizar el aprendizaje del náhuatl, una lengua que aún hoy vive en las comunidades indígenas de México.
+
+El proceso detrás de **Aztlán: Las Islas del Saber** es un reflejo del esfuerzo colectivo de un equipo comprometido con la innovación y la tradición. Este documento sirve como guía para otros que deseen emprender proyectos similares, mostrando no solo los logros, sino también los desafíos enfrentados y las lecciones aprendidas.
+
+Esperamos que este libro inspire a futuros desarrolladores, educadores y creativos a explorar nuevas formas de integrar tecnología, cultura y aprendizaje. Que sea, además, un recordatorio de que nuestras raíces pueden florecer en terrenos inesperados, incluso en los mundos digitales.
+
+**Equipo de Cacahuate Studios**  
+Diciembre de 2024  
+

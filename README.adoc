@@ -1,0 +1,34 @@
+= Aztlán: Las Islas del Saber
+
+Este libro es una propuesta de proyecto que consiste en un videojuego desarrollado en lua con https://tic80.com/[TIC-80], que es un memorice hecho principalmente para el aprendizaje de la lengua Náhuatl y sirve como un pequeño vistazo a la cultura Azteca. 
+
+Como miembros de Cacahuate Studios, Diana Narváez mexicana y Sergio Vargas, creemos fielmente en que la integración de las diferentes culturas es un paso fundamental en la mejoría de nuestra sociedad, por lo que el tema de Aztlán: Las Islas del Saber nos ha inspirado bastante.
+
+Por el momento, el juego está desarrollado hasta una fase beta donde solo cuenta con un nivel por isla, pero en la documentación presente se encuentra una idea más amplia de lo que queremos que llegue a ser el juego un poco más completo.
+
+== Technology
+
+- https://www.docker.com/
+- https://docs.asciidoctor.org/
+- Python3 (Webserver)
+- https://pandoc.org/ (Conversion to multiple formats)
+
+== Comandos
+
+- `make install`: Builds the Dockerfile.
+- `make html`: Builds the html version of the book.
+- `make pdf`: Builds a PDF version of the book.
+- `make server`: Starts a new server for the html version. (requires python3).
+- `make word`: Creates a new Microsoft Word document from the book. (requires pandoc).
+
+== License
+
+Project made by Cacahuate Studios.
+
+Template created with ❤️ by https://ninjas.cl[Camilo Castro] and https://github.com/ninjascl/asciidoc-book-template/graphs/contributors[contributors]footnote:[https://github.com/ninjascl/asciidoc-book-template/graphs/contributors]. for https://ninjas.cl[Ninjas.cl]{fn-ninjas}.
+
+This document is licensed with http://creativecommons.org/licenses/by-nc-sa/4.0/[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International]footnote:[http://creativecommons.org/licenses/by-nc-sa/4.0/]
+
+http://creativecommons.org/licenses/by-nc-sa/4.0/[image:resources/images/by-nc-sa.svg[Licencia Creative Commons]]
+
+Source code licensed with https://opensource.org/licenses/BSD-2-Clause[BSD-2]footnote:[https://opensource.org/licenses/BSD-2-Clause].

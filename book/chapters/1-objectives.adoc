@@ -1,0 +1,47 @@
+== Desarrollo de Objetivos
+
+=== 1. Objetivos Educativos
+
+**1.1. Fomentar el aprendizaje del náhuatl a través del juego**  
+El objetivo principal es enseñar vocabulario en náhuatl de manera divertida e interactiva. Cada nivel del juego presentará un conjunto de palabras temáticas que los jugadores aprenderán mediante ejercicios de memorice, reforzando la memoria y la asociación.  
+
+**1.2. Ofrecer un enfoque pedagógico basado en la repetición espaciada**  
+El juego utilizará mecánicas que incentivan la repetición de términos previamente aprendidos para consolidar el conocimiento. Los jugadores encontrarán palabras vistas en niveles anteriores durante las batallas contra los jefes, asegurando su retención a largo plazo.  
+
+**1.3. Integrar aprendizaje cultural**  
+Además del vocabulario, el juego busca educar a los jugadores sobre la mitología y la historia azteca a través de la narrativa, los personajes y el diseño de las islas. Cada isla representa un aspecto cultural o mítico relacionado con la lengua y la cosmovisión azteca.  
+
+=== 2. Objetivos Culturales
+
+**2.1. Promover la preservación de la lengua náhuatl**  
+El proyecto se alinea con los esfuerzos globales de revitalización de lenguas indígenas. Al hacer que el aprendizaje del náhuatl sea accesible y atractivo, se contribuye a la preservación y promoción de esta lengua en peligro de extinción.  
+
+**2.2. Fomentar la apreciación de la herencia cultural azteca**  
+A través de elementos visuales y narrativos, el juego introduce a los jugadores al mundo de Aztlán, despertando un interés por la cultura y la historia mesoamericana. Esto fomenta un sentido de identidad y orgullo cultural, especialmente entre los jugadores de origen mexicano o con interés en las culturas indígenas.  
+
+=== **3. Objetivos Tecnológicos**  
+
+**3.1. Crear un juego multiplataforma accesible**  
+El desarrollo se enfocará en una solución técnica que permita la ejecución fluida del juego en diferentes plataformas: web, iOS y Android. Esto asegurará que el mayor número de usuarios posibles pueda acceder al contenido educativo, independientemente de su dispositivo.  
+
+**3.2. Utilizar TIC-80 y Lua para un desarrollo eficiente**  
+TIC-80 es un entorno liviano que permite un desarrollo rápido y optimizado. Con Lua como lenguaje principal, se busca maximizar la eficiencia del código, asegurando que el juego funcione bien incluso en dispositivos de gama baja.  
+
+**3.3. Aprovechar Jasonelle para compatibilidad en iOS**  
+Para la versión de iOS, se utilizará el framework Jasonelle, que facilita la implementación de aplicaciones nativas con bajo costo de desarrollo y mantenimiento, aprovechando la flexibilidad del entorno JSON.  
+
+=== 4. Objetivos de Experiencia de Usuario (UX)
+
+**4.1. Ofrecer una experiencia intuitiva y amigable**  
+El diseño de la interfaz será simple y accesible, con menús claros y un flujo de navegación que permita a los jugadores concentrarse en el aprendizaje y la diversión sin complicaciones.  
+
+=== 5. Objetivos Comerciales
+
+**5.1. Lograr una amplia distribución del juego**  
+El juego será gratuito y estará disponible en múltiples plataformas para alcanzar una audiencia global, con especial enfoque en comunidades educativas y culturales.  
+
+**5.2. Posicionar la marca como referente en videojuegos educativos**  
+Con **Aztlán: Las Islas del Saber**, la compañía busca establecerse como líder en el desarrollo de videojuegos que combinan aprendizaje, entretenimiento y preservación cultural.  
+
+**5.3. Explorar oportunidades de monetización sostenible**  
+Opcionalmente, el juego podría incluir contenido adicional premium, como nuevas islas o temas, para asegurar la sostenibilidad económica del proyecto sin comprometer la experiencia educativa principal.  

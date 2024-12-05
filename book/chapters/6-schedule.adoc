@@ -1,0 +1,32 @@
+== Cronograma General  
+
+[cols="3,7", options="header, stripes"]  
+|===  
+| Semana | Actividades  
+
+| 1 
+| - Definición de requerimientos.  
+  - Diseño UX/UI.  
+
+| 2 
+| - Desarrollo del prototipo inicial:  
+  -- Pantalla de inicio.  
+  -- Primer nivel (Isla de los Números).  
+  -- Lógica básica del juego.  
+
+| 3-4 
+| - Desarrollo completo del juego:  
+  -- Niveles de todas las islas.  
+  -- Implementación de jefes finales.  
+  -- Integración de sonido y música.  
+  -- Versiones para iOS y Android.  
+
+| 4 
+| - Pruebas exhaustivas en todas las plataformas.  
+  - Corrección de errores.  
+  - Ajustes finales.  
+
+| 4
+| - Lanzamiento oficial.  
+  - Monitoreo y soporte post-lanzamiento.  
+|===  

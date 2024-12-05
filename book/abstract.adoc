@@ -1,0 +1,14 @@
+[preface]
+[role="abstract"]
+
+== Abstract
+
+Este libro documenta el desarrollo de **Aztlán: Las Islas del Saber**, un videojuego educativo diseñado para enseñar palabras en náhuatl a través de una experiencia interactiva y entretenida. Desde su conceptualización hasta su implementación técnica, el proyecto integra diseño cultural, desarrollo de software y estrategias pedagógicas innovadoras.  
+
+El juego fue desarrollado utilizando **Lua** en el entorno retro de **TIC-80**, lo que permitió una implementación ligera y eficiente, ideal para plataformas web y móviles. Para la versión móvil, se adoptaron soluciones específicas: **Jasonelle** fue utilizado para implementar la versión en iOS, aprovechando su capacidad para desarrollar aplicaciones nativas a partir de archivos JSON, mientras que la versión para Android se construyó utilizando tecnologías compatibles con la versión web.  
+
+Este libro aborda tanto el diseño conceptual, incluyendo la creación de la narrativa y la estética visual inspirada en la cultura azteca, como los aspectos técnicos del desarrollo. Además, se detalla el proceso de integración multiplataforma, los desafíos de optimización y las soluciones adoptadas para garantizar una experiencia de usuario fluida y consistente en diferentes dispositivos.  
+
+A lo largo de sus capítulos, se ofrece una visión completa del flujo de trabajo, desde la creación de las mecánicas de juego y los niveles educativos, hasta la implementación y despliegue de las aplicaciones. Este proyecto busca no solo preservar la lengua náhuatl, sino también explorar nuevas formas de aprendizaje a través de la tecnología.  
+
+**Palabras clave:** Náhuatl, videojuegos educativos, TIC-80, Lua, Jasonelle, desarrollo multiplataforma, preservación cultural, aprendizaje interactivo.  

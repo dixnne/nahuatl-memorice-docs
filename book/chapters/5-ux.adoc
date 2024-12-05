@@ -1,0 +1,155 @@
+== Diseño de UX (Experiencia de Usuario) 
+
+=== 1. Principios de Diseño UX
+
+- **Intuitividad:**  
+  La navegación y mecánicas del juego deben ser fáciles de comprender, incluso para usuarios primerizos.   
+- **Engagement:**  
+  Mantener a los jugadores motivados con retroalimentación positiva, recompensas y desafíos progresivos.  
+- **Consistencia:**  
+  Elementos visuales y patrones de interacción consistentes a lo largo del juego.  
+
+=== 2. Flujo del Usuario
+
+[plantuml]
+----
+@startuml
+!define RECTANGLE class
+
+' Contenedor principal del juego
+package "Aztlán: Las Islas del Saber" {
+  RECTANGLE Game {
+    Pantalla de Inicio
+    Selección de Lenguaj
+    Lenguaje de Aprendizaje
+    Selección de Isla
+    Juego de Memorice
+    Jefe Final
+    Créditos
+  }
+
+  RECTANGLE Player {
+    Selecciona Opciones
+    Juega los Niveles
+    Enfrenta el Jefe Final
+    Ve los Créditos
+  }
+
+  RECTANGLE Language {
+    Español
+    Inglés
+    Náhuatl
+  }
+
+  RECTANGLE Islands {
+    Isla de Números
+    Isla de Colores
+    Isla de Días
+    Isla de Meses
+    Isla de Partes del Cuerpo
+    Isla de Verbos
+  }
+
+  RECTANGLE Boss {
+    Jefe Final
+  }
+
+  ' Relaciones
+  Player -down-> Game : Interactúa con
+  Game -down-> Language : Selecciona idioma
+  Game -down-> Islands : Selecciona isla
+  Game -down-> Boss : Enfrenta al Jefe Final
+  Game -down-> Credits : Muestra los créditos
+}
+
+' Definir el flujo entre pantallas y jugadores
+package "Flujo de Interacción" {
+  RECTANGLE StartScreen {
+    Pantalla de inicio con Jugar y Créditos
+  }
+  RECTANGLE LanguageScreen {
+    Selecciona un idioma para la interfaz
+  }
+  RECTANGLE LearningLanguageScreen {
+    Selecciona un idioma para aprender
+  }
+  RECTANGLE IslandSelectionScreen {
+    Selecciona una isla para jugar
+  }
+  RECTANGLE MemoriceGameScreen {
+    Juego de memorice de 6 pares de palabras
+  }
+  RECTANGLE FinalBossScreen {
+    Enfrenta al Jefe Final
+  }
+  RECTANGLE CreditsScreen {
+    Pantalla de créditos del juego
+  }
+
+  ' Relaciones de interacción
+  StartScreen -down-> LanguageScreen : Selecciona Jugar
+  LanguageScreen -down-> LearningLanguageScreen : Selecciona idioma
+  LearningLanguageScreen -down-> IslandSelectionScreen : Elige idioma para aprender
+  IslandSelectionScreen -down-> MemoriceGameScreen : Juega memorice
+  MemoriceGameScreen -down-> IslandSelectionScreen : Gana nivel, regresa al mapa
+  IslandSelectionScreen -down-> FinalBossScreen : Tras completar las 6 islas
+  FinalBossScreen -down-> CreditsScreen : Derrota al Jefe Final
+  StartScreen -down-> CreditsScreen : Selecciona Créditos
+}
+@enduml
+
+----
+
+
+**2.1. Pantalla de Inicio**  
+
+Presenta el título del juego *Aztlán: Las Islas del Saber* con un diseño temático azteca.  
+Opciones disponibles:  
+
+  - *Start*
+  - *Créditos*  
+
+**2.2. Selección de Isla**  
+
+- Mapa interactivo de las Islas del Saber.  
+- Cada isla muestra un nombre, un ícono temático y un indicador de progreso.  
+
+**2.3. Interfaz del Juego de Memorice** 
+
+- **Distribución de Tarjetas:**  
+  Disposición de 12 cartas (6 pares) en una cuadrícula.  
+- **Retroalimentación Inmediata:**  
+  Sonidos y animaciones al emparejar correctamente o al fallar.  
+- **Indicador:**  
+  Reloj de tiempo restante (si aplica).  
+
+**2.4. Pantalla de Batalla contra el Jefe**  
+
+- **Diálogo de Introducción:**  
+  El jefe presenta un desafío temático relacionado con el vocabulario aprendido.  
+- **Interacción:**  
+  Responder preguntas o completar desafíos avanzados para derrotar al jefe.  
+
+=== 3. Diseño Visual
+
+**3.1. Estilo Gráfico**  
+
+- **Tema Mesoamericano:**  
+  Basado en patrones y artefactos aztecas, con colores tierra y oro para evocar la cultura náhuatl y elementos como glifos, templos y dioses en la interfaz.  
+
+**3.2. Tipografía**  
+
+- Tipografía decorativa para títulos y menús.  
+- Fuentes legibles y simples para el texto del juego.  
+
+=== 4. Sonido y Retroalimentación
+
+**4.1. Sonidos Ambientales**  
+
+- Música relajante de fondo inspirada en instrumentos prehispánicos.  
+- Efectos de sonido para aciertos, errores y eventos clave.  
+
+**4.2. Notificaciones Visuales y Auditivas**  
+
+- Iluminación de tarjetas correctas, vibración en dispositivos móviles al fallar.  
+- Indicadores sonoros que refuerzan el feedback del jugador.  

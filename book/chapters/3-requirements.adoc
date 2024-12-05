@@ -1,0 +1,44 @@
+== Requisitos Funcionales
+
+=== 1. Gameplay
+
+**1.1. Mecánicas de Juego**  
+- **Memorice Temático:**  
+  Cada nivel incluirá un juego de memorice con 6 pares de palabras relacionadas con el tema de la isla. El jugador deberá emparejar correctamente las tarjetas para avanzar.  
+
+- **Batalla contra el Jefe:**  
+  Después de completar los niveles de memorice, el jugador enfrentará un jefe que presenta desafíos adicionales relacionados con el vocabulario aprendido. Esto puede incluir preguntas de opción múltiple o un formato de respuesta directa.  
+
+**1.2. Modo de Juego**  
+- **Modo Individual:**  
+  El jugador avanza a su propio ritmo, explorando cada isla y su contenido.  
+- **Modo Competitivo (Futuro):**  
+  Clasificación en tablas de líderes globales basadas en el desempeño en cada isla.  
+
+=== 2. Navegación y UI
+
+**2.1. Menús Principales** 
+
+- **Pantalla de Inicio:**  
+    Opciones: *Jugar*, *Créditos*.  
+- **Selección de Isla:**
+    Seis islas diferentes disponibles.
+
+=== 3. Idiomas y Localización 
+
+- **Soporte Multilingüe:**  
+  Español, Inglés y Náhuatl.  
+  
+=== 4. Plataformas y Compatibilidad 
+
+**4.1. Web**  
+
+- Compatible con los navegadores modernos (Chrome, Firefox, Safari, Edge).  
+
+**4.2. Móviles**  
+
+- **iOS:**  
+  Implementación utilizando Jasonelle para una experiencia nativa.  
+- **Android:**  
+  Compatible con dispositivos de gama media y alta, utilizando tecnologías nativas integradas con TIC-80.  
+ación opcional a través de un código QR o sistema de respaldo local.  

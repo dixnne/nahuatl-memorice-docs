@@ -1,0 +1,10 @@
+[preface]
+[role="authors"]
+
+== Autores
+
+=== Cacahuate Studios
+
+Diana Paola Narváez Martínez, estudiante de Ingeniería en Sistemas Computacionales en la Universidad Autónoma de Aguascalientes en México, estudiante internacional en la Universidad Viña del Mar en Chile durante el desarrollo de este proyecto.
+
+Sergio Andres Vargas Alayo, estudiante de Ingeniería Civil Informática en la Universidad Viña del Mar en Chile.

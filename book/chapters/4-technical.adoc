@@ -1,0 +1,85 @@
+== Detalles Técnicos
+
+=== 1.Arquitectura del Sistema
+
+**1.1 Estructura General**  
+
+El sistema estará compuesto por tres componentes principales:  
+
+1. **Frontend (TIC-80):**  
+
+   - Desarrollado en Lua, utilizando TIC-80 como motor principal.  
+   - Proporciona una experiencia de juego interactiva con gráficos retro optimizados.
+
+2. **Backend (Futuro):** 
+
+   - Infraestructura opcional para guardar progresos y manejar tablas de líderes.  
+   - Puede ser implementado con un backend ligero basado en Node.js y una base de datos NoSQL (MongoDB o Firebase).  
+
+3. **Aplicación para iOS:**  
+
+   - Permite la integración de TIC-80 en aplicaciones nativas para iOS mediante Jasonelle. 
+
+4. **Aplicación Android:**  
+
+   - Desarrollada con un contenedor nativo para ejecutar TIC-80.  
+
+=== 2. Desarrollo del Juego
+
+**2.1. Lenguaje de Programación** 
+
+- **Lua:**  
+  Usado para toda la lógica del juego, incluyendo las mecánicas de memorice, animaciones, y la interacción con la interfaz de usuario.  
+
+**2.2. TIC-80**  
+
+- Consola virtual que permite la creación de juegos retro con gráficos, sonido y lógica integrados.  
+- **Resolución:** 240x136 píxeles, optimizado para juegos ligeros y portabilidad.  
+- **Límite de Cartuchos:** Un cartucho TIC-80 puede almacenar hasta 64 KB de datos, lo que exige una gestión eficiente de recursos.  
+
+**2.3. Jasonelle (iOS)** 
+
+- Framework JSON-first para aplicaciones iOS.  
+- Permite empaquetar el juego TIC-80 y agregar características nativas como notificaciones push.  
+
+**2.4. Contenedor Nativo Android**  
+- Integración del juego en un contenedor que proporciona acceso a características nativas como almacenamiento local y vibración.  
+
+=== 3. Gráficos y Diseño
+
+**4.1. Pixel Art**  
+- Estilo gráfico retro diseñado dentro de las limitaciones de TIC-80.  
+- **Paleta de Colores:** Limitada a 16 colores simultáneos, optimizando la estética para una experiencia nostálgica y clara.  
+
+**4.2. Animaciones**  
+- Animaciones básicas para personajes y enemigos, desarrolladas como sprites de bajo peso.  
+
+=== 4. Sonido y Música
+
+**5.1. Sonido**  
+- Efectos de sonido generados usando el editor de sonido integrado en TIC-80.  
+- **Ejemplos:** sonidos de aciertos y errores, efectos de transición entre niveles.  
+
+**5.2. Música**  
+- Música de fondo en formato chiptune, compuesta directamente en TIC-80.  
+
+=== 5. Compatibilidad
+
+**6.1. Web**  
+- Compatible con los principales navegadores modernos:  
+  - Chrome, Firefox, Safari, Edge.  
+
+**6.2. Móviles**  
+- **iOS:** Requiere al menos iOS 11 y dispositivos con arquitectura de 64 bits.  
+- **Android:** Compatible con Android 7.0 (Nougat) y versiones superiores.  
+
+=== 6. Integración Continua y Pruebas
+
+**7.1. Sistema de Control de Versiones**  
+- Uso de Git para gestión de código.  
+
+**7.2. Pruebas UAT**  
+- Lanzamiento del beta para User Acceptance Test.
+
+**7.3. Pruebas en Dispositivos**  
+- Pruebas manuales en múltiples dispositivos móviles para garantizar una experiencia consistente.  

@@ -1,0 +1,6 @@
+== Aprobaciones
+- **Director de Proyecto:** Diana Narváez
+- **Desarrollador Principal:** Sergio Vargas
+- **Diseñador Narrativo:** Diana Narváez
+- **Equipo Artístico:** Diana Narváez y Sergio Vargas
+- **Testers:** Diana Narváez, Sergio Vargas
