@@ -81,6 +81,8 @@ endif::[]
 
 include::book/chapters.adoc[]
 
+include::book/adrs.adoc[]
+
 include::book/bibliography.adoc[]
 
 ifdef::backend-pdf[]

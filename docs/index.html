@@ -189,6 +189,38 @@ a {
 <li><a href="#_cronograma_general">6. Cronograma General</a></li>
 <li><a href="#_matriz_de_riesgos">7. Matriz de Riesgos</a></li>
 <li><a href="#_aprobaciones">8. Aprobaciones</a></li>
+<li><a href="#_architecture_decision_records">9. Architecture Decision Records</a>
+<ul class="sectlevel2">
+<li><a href="#_adr_decisión_de_emplear_términos_relacionados_para_los_días_de_la_semana">9.1. ADR: Decisión de Emplear Términos Relacionados para los Días de la Semana</a>
+<ul class="sectlevel3">
+<li><a href="#_contexto">9.1.1. Contexto</a></li>
+<li><a href="#_decisión">9.1.2. Decisión</a></li>
+<li><a href="#_consecuencias">9.1.3. Consecuencias</a></li>
+</ul>
+</li>
+<li><a href="#_adr_cambio_de_wren_a_lua_para_programación_en_tic_80">9.2. ADR: Cambio de Wren a Lua para Programación en TIC-80</a>
+<ul class="sectlevel3">
+<li><a href="#_contexto_2">9.2.1. Contexto</a></li>
+<li><a href="#_decisión_2">9.2.2. Decisión</a></li>
+<li><a href="#_consecuencias_2">9.2.3. Consecuencias</a></li>
+</ul>
+</li>
+<li><a href="#_adr_elección_de_diseño_e_historia_del_jefe_principal_y_los_jefes_de_isla">9.3. ADR: Elección de Diseño e Historia del Jefe Principal y los Jefes de Isla</a>
+<ul class="sectlevel3">
+<li><a href="#_contexto_3">9.3.1. Contexto</a></li>
+<li><a href="#_decisión_3">9.3.2. Decisión</a></li>
+<li><a href="#_consecuencias_3">9.3.3. Consecuencias</a></li>
+</ul>
+</li>
+<li><a href="#_adr_inclusión_del_idioma_inglés_en_el_juego">9.4. ADR: Inclusión del Idioma Inglés en el Juego</a>
+<ul class="sectlevel3">
+<li><a href="#_contexto_4">9.4.1. Contexto</a></li>
+<li><a href="#_decisión_4">9.4.2. Decisión</a></li>
+<li><a href="#_consecuencias_4">9.4.3. Consecuencias</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#_references">References</a></li>
 </ul>
 </div>
@@ -981,6 +1013,467 @@ Basado en patrones y artefactos aztecas, con colores tierra y oro para evocar la
 </div>
 </div>
 <div class="sect1">
+<h2 id="_architecture_decision_records">9. Architecture Decision Records</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_adr_decisión_de_emplear_términos_relacionados_para_los_días_de_la_semana">9.1. ADR: Decisión de Emplear Términos Relacionados para los Días de la Semana</h3>
+<div class="sect3">
+<h4 id="_contexto">9.1.1. Contexto</h4>
+<div class="paragraph">
+<p>En la creación de un videojuego o proyecto educativo que utiliza el náhuatl como idioma complementario, surge la necesidad de representar los días de la semana utilizando términos relacionados con la cosmovisión náhuatl. Dado que los días de la semana tienen una importancia ritual y cultural profunda en las tradiciones mesoamericanas, se considera que usar términos relacionados no solo preserva la integridad cultural, sino que también enriquecerá la experiencia educativa y emocional del jugador o usuario.</p>
+</div>
+<div class="paragraph">
+<p>Los días de la semana en náhuatl no siguen una nomenclatura estándar como en muchos idiomas europeos, sino que están relacionados con fenómenos astronómicos, actividades cotidianas y representaciones simbólicas de los dioses. Los días tienen significados que se correlacionan con el sol, la luna, las estaciones y la vida cotidiana de los pueblos originarios.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_decisión">9.1.2. Decisión</h4>
+<div class="paragraph">
+<p><strong>Emplear los términos náhuatl relacionados con los días de la semana</strong> como parte integral del proyecto, con el propósito de fomentar el aprendizaje cultural y lingüístico. Para garantizar la accesibilidad, se incluirán traducciones al español e inglés dentro del juego o proyecto educativo, así como explicaciones contextualizadas de cada término.</p>
+</div>
+<div class="sect4">
+<h5 id="_implementación">Implementación:</h5>
+<div class="literalblock">
+<div class="content">
+<pre>El proyecto usará los siguientes términos para los días de la semana en náhuatl:
+   - **Tonalli** (Domingo)
+   - **Hueyecac** (Lunes)
+   - **Mecatl** (Martes)
+   - **Xochitl** (Miércoles)
+   - **Ocelotl** (Jueves)
+   - **Cuauhtli** (Viernes)
+   - **Tonatiuh** (Sol)
+   - **Metztli** (Luna)
+   - **Citlalin** (Estrella)
+   - **Atl** (Agua)
+   - **Tlalli** (Tierra)
+   - **Ehecatl** (Viento)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En un futuro se diseñarán herramientas educativas dentro del juego (glosarios interactivos, mini-juegos o guías) para ayudar a los jugadores a familiarizarse con estos términos y sus significados.</p>
+</div>
+<div class="paragraph">
+<p>A continuación, se detallan las razones y el razonamiento detrás de esta elección:</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_justificación">Justificación</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Preservación cultural</strong>: Utilizar estos términos en lugar de los términos de uso común (como lunes, martes, etc.) ayuda a preservar y difundir la lengua náhuatl y su rica historia cultural. Los nombres de los días en náhuatl reflejan la cosmovisión mesoamericana, mostrando la conexión profunda con la naturaleza y los ciclos cósmicos.</p>
+</li>
+<li>
+<p><strong>Enriquecimiento educativo</strong>: Al emplear estos términos, los jugadores o estudiantes aprenderán más que solo vocabulario; también se introducirán en los conceptos de la espiritualidad náhuatl, el ciclo del tiempo y las creencias en torno a los dioses y las fuerzas cósmicas.</p>
+</li>
+<li>
+<p><strong>Relevancia cultural y contextos históricos</strong>: El uso de estos términos puede ayudar a los usuarios a conectar con las raíces históricas de las culturas mesoamericanas, fortaleciendo su identidad cultural, especialmente en un contexto educativo o de preservación cultural.</p>
+</li>
+<li>
+<p><strong>Inmersión en el mundo del videojuego o entorno educativo</strong>: Los términos reflejan una dimensión más rica y auténtica en el diseño del proyecto, contribuyendo a la atmósfera general. Esto puede aumentar el sentido de inmersión del jugador, si se integra adecuadamente con los demás elementos del entorno.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_alternativas_consideradas">Alternativas Consideradas</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Usar los días de la semana en español o inglés</strong>: Esta alternativa es la más común en aplicaciones y videojuegos educativos, pero no refleja la profundidad cultural y lingüística que se busca promover en este proyecto.</p>
+</li>
+<li>
+<p><strong>Utilizar los días de la semana en un formato estándar</strong> (lunes, martes, etc.) con una traducción secundaria en náhuatl: Aunque esta opción preservaría la comprensión inmediata para los usuarios, no lograría el mismo nivel de inmersión ni transmitiría el mismo impacto cultural.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_impacto_en_el_proyecto">Impacto en el Proyecto</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Educación</strong>: Al usar los términos náhuatl, el proyecto puede servir como una herramienta educativa poderosa para enseñar sobre el calendario y los conceptos culturales náhuatl.</p>
+</li>
+<li>
+<p><strong>Desarrollo</strong>: El equipo de desarrollo deberá asegurarse de que los jugadores puedan entender y aprender estos términos sin que la experiencia sea demasiado compleja. Esto podría incluir la adición de tutoriales, glosarios o explicaciones dentro del juego.</p>
+</li>
+<li>
+<p><strong>Culturalmente Sensible</strong>: El uso de estos términos debe ser manejado con respeto y precisión cultural para evitar la trivialización de un patrimonio lingüístico y cultural.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consecuencias">9.1.3. Consecuencias</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Positivas</strong>: El proyecto ganará en autenticidad y en valor educativo. Los usuarios podrán aprender sobre la importancia cultural de los días de la semana dentro de la cosmovisión náhuatl, mientras se familiarizan con la lengua de una forma que va más allá de un simple vocabulario.</p>
+</li>
+<li>
+<p><strong>Negativas</strong>: Puede que los jugadores que no están familiarizados con el idioma náhuatl se sientan inicialmente desconcertados, lo que podría afectar la accesibilidad del proyecto. Se deberá considerar la inclusión de traducciones o explicaciones para mitigar esto.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adr_cambio_de_wren_a_lua_para_programación_en_tic_80">9.2. ADR: Cambio de Wren a Lua para Programación en TIC-80</h3>
+<div class="sect3">
+<h4 id="_contexto_2">9.2.1. Contexto</h4>
+<div class="paragraph">
+<p>TIC-80 es una consola de fantasía diseñada para el desarrollo de videojuegos. Ofrece varios lenguajes de scripting, como Wren, Lua, JavaScript, entre otros. Actualmente, nuestro proyecto utiliza Wren para la programación, pero hemos identificado varias limitaciones que afectan la eficiencia del desarrollo y la experiencia del usuario.</p>
+</div>
+<div class="sect4">
+<h5 id="_problemas_con_wren">Problemas con Wren</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Comunidad y Soporte Limitado</strong>: Wren tiene una comunidad más pequeña y menos recursos disponibles en comparación con otros lenguajes soportados.</p>
+</li>
+<li>
+<p><strong>Integración en TIC-80</strong>: La integración de Wren en TIC-80 es menos madura, con menos documentación y soporte técnico.</p>
+</li>
+<li>
+<p><strong>Rendimiento</strong>: En ciertos escenarios, Lua ofrece mejor rendimiento dentro del entorno de TIC-80.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_decisión_2">9.2.2. Decisión</h4>
+<div class="paragraph">
+<p>Cambiaremos el lenguaje de scripting de Wren a Lua para todos los futuros desarrollos en TIC-80.</p>
+</div>
+<div class="sect4">
+<h5 id="_alternativas_consideradas_2">Alternativas Consideradas</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Continuar con Wren</strong>
+Mantener Wren fue descartado debido a las limitaciones mencionadas.</p>
+</li>
+<li>
+<p><strong>Cambiar a JavaScript</strong>
+Si bien JavaScript también tiene buen soporte en TIC-80, su rendimiento es inferior a Lua en este entorno.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_justificación_2">Justificación</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Mayor Popularidad y Comunidad Activa</strong>
+Lua es un lenguaje ampliamente utilizado en la industria de los videojuegos, con una comunidad activa y muchos recursos educativos, lo que facilita la resolución de problemas y la incorporación de nuevos desarrolladores.</p>
+</li>
+<li>
+<p><strong>Mejor Soporte en TIC-80</strong>
+Lua es uno de los lenguajes mejor integrados en TIC-80, con una implementación más madura, mejor documentación, y mayor soporte en la comunidad TIC-80.</p>
+</li>
+<li>
+<p><strong>Rendimiento Superior</strong>
+Lua tiene un motor de ejecución eficiente y está optimizado para entornos de tiempo real, lo que puede mejorar el rendimiento de los juegos en TIC-80.</p>
+</li>
+<li>
+<p><strong>Facilidad de Uso</strong>
+Lua tiene una sintaxis simple y es fácil de aprender, lo que mejora la productividad y reduce la curva de aprendizaje para nuevos desarrolladores.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consecuencias_2">9.2.3. Consecuencias</h4>
+<div class="sect4">
+<h5 id="_positivas">Positivas</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Acceso a una mayor cantidad de recursos de aprendizaje y soporte.</p>
+</li>
+<li>
+<p>Mejor rendimiento en TIC-80.</p>
+</li>
+<li>
+<p>Desarrollo más rápido y fácil de mantener gracias a la simplicidad de Lua.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_negativas">Negativas</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Reescritura del código existente en Lua, lo que implica un costo inicial de transición.</p>
+</li>
+<li>
+<p>Potencial pérdida de algunas características específicas de Wren.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adr_elección_de_diseño_e_historia_del_jefe_principal_y_los_jefes_de_isla">9.3. ADR: Elección de Diseño e Historia del Jefe Principal y los Jefes de Isla</h3>
+<div class="sect3">
+<h4 id="_contexto_3">9.3.1. Contexto</h4>
+<div class="paragraph">
+<p>El videojuego <strong>Aztlán: Las Islas del Saber</strong> se centra en la recuperación del conocimiento robado por el chamán Xīlōticahualli. Cada isla representa un aspecto clave del conocimiento perdido (números, colores, días, meses, partes del cuerpo y verbos). Los jugadores deben enfrentarse a un jefe en cada isla para recuperar las palabras en náhuatl protegidas por estos guardianes.</p>
+</div>
+<div class="paragraph">
+<p>Para enriquecer la experiencia narrativa y de juego, se decidió diseñar tanto al jefe principal, Xīlōticahualli, como a los jefes de cada isla con características únicas que resalten su relación con el conocimiento que protegen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_decisión_3">9.3.2. Decisión</h4>
+<div class="paragraph">
+<p>Diseñar al jefe principal (Xīlōticahualli) y los jefes de cada isla con las siguientes características:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Xīlōticahualli, el Chamán Oscuro</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Diseño inspirado en un chamán azteca oscuro, con una estética imponente y elementos visuales que representen la corrupción del conocimiento.</p>
+</li>
+<li>
+<p>Habilidades mágicas basadas en la manipulación de sombras y hechizos relacionados con el caos.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Jefes de Isla</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cada jefe refleja el tema específico de su isla:</p>
+</li>
+<li>
+<p><strong>Isla de los Números</strong>: Un guardián mecánico con engranajes y runas numéricas.</p>
+</li>
+<li>
+<p><strong>Isla de los Colores</strong>: Una criatura camaleónica que cambia de forma y color.</p>
+</li>
+<li>
+<p><strong>Isla de los Días</strong>: Un guerrero solar-lunar con ataques que varían según la fase del día.</p>
+</li>
+<li>
+<p><strong>Isla de los Meses</strong>: Una entidad con elementos estacionales.</p>
+</li>
+<li>
+<p><strong>Isla de las Partes del Cuerpo</strong>: Un golem compuesto por piezas corporales.</p>
+</li>
+<li>
+<p><strong>Isla de los Verbos</strong>: Un espíritu ágil que representa acción y movimiento.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Historia Compartida</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Los jefes son antiguos guardianes corrompidos por Xīlōticahualli, con su propio trasfondo relacionado con la sabiduría que protegen.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect4">
+<h5 id="_justificación_3">Justificación</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Coherencia Temática y Narrativa</strong>
+Diseñar los jefes en torno a los temas de cada isla refuerza la conexión narrativa entre el jugador y los conocimientos que intenta recuperar.</p>
+</li>
+<li>
+<p><strong>Diversidad en Mecánicas de Juego</strong>
+Cada jefe tiene mecánicas de combate únicas basadas en su tema, lo que ofrece variedad y desafíos diferenciados a los jugadores.</p>
+</li>
+<li>
+<p><strong>Inmersión Cultural</strong>
+Los diseños inspirados en la iconografía y mitología azteca enriquecen la experiencia visual y cultural, alineándose con la temática general del juego.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_alternativas_consideradas_3">Alternativas Consideradas</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Diseño Genérico para Todos los Jefes</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Pro: Reducción del tiempo y costo de desarrollo.</p>
+</li>
+<li>
+<p>Contra: Pérdida de inmersión y conexión narrativa.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Diseño de Jefes sin Relación con el Conocimiento de las Islas</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Pro: Permitiría una mayor libertad creativa en el diseño.</p>
+</li>
+<li>
+<p>Contra: Debilitaría la cohesión temática y narrativa.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Un Solo Jefe Final Sin Jefes de Isla</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Pro: Simplificación de la estructura del juego.</p>
+</li>
+<li>
+<p>Contra: Menor variedad en la jugabilidad y sensación de progresión.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consecuencias_3">9.3.3. Consecuencias</h4>
+<div class="sect4">
+<h5 id="_positivas_2">Positivas</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Mejora la conexión emocional del jugador con la historia y los desafíos.</p>
+</li>
+<li>
+<p>Incrementa la rejugabilidad gracias a la variedad en los combates contra los jefes.</p>
+</li>
+<li>
+<p>Refuerza la identidad cultural y educativa del juego.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_negativas_2">Negativas</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Incremento en el tiempo y costo de desarrollo debido a la necesidad de diseñar y programar múltiples jefes.</p>
+</li>
+<li>
+<p>Complejidad adicional en la narrativa al desarrollar historias individuales para cada jefe.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adr_inclusión_del_idioma_inglés_en_el_juego">9.4. ADR: Inclusión del Idioma Inglés en el Juego</h3>
+<div class="sect3">
+<h4 id="_contexto_4">9.4.1. Contexto</h4>
+<div class="paragraph">
+<p>El videojuego <strong>Aztlán: Las Islas del Saber</strong> fue inicialmente concebido como una herramienta educativa para promover el aprendizaje del náhuatl mediante un entorno lúdico en español. Sin embargo, dado el interés creciente por culturas y lenguas indígenas en audiencias internacionales, hemos evaluado la posibilidad de incluir el idioma inglés para ampliar nuestro alcance y diversificar la base de usuarios.</p>
+</div>
+<div class="paragraph">
+<p>La decisión de ofrecer el juego en inglés no solo facilita su accesibilidad a jugadores no hispanohablantes, sino que también incrementa su valor cultural al divulgar el náhuatl en un contexto global.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_decisión_4">9.4.2. Decisión</h4>
+<div class="paragraph">
+<p>El juego incluirá soporte completo para el idioma inglés, permitiendo a los jugadores elegir entre español e inglés desde el menú principal.</p>
+</div>
+<div class="sect4">
+<h5 id="_alternativas_consideradas_4">Alternativas Consideradas</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Mantener solo español y náhuatl</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Pros</strong>: Enfoque en las lenguas originalmente planeadas; simplificación del desarrollo.</p>
+</li>
+<li>
+<p><strong>Contras</strong>: Limita el alcance del juego, dificultando la participación de una audiencia internacional.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Añadir más idiomas internacionales (francés, alemán, etc.)</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Pros</strong>: Diversidad máxima en la base de usuarios.</p>
+</li>
+<li>
+<p><strong>Contras</strong>: Complejidad excesiva; aumenta drásticamente los costos y tiempos de desarrollo.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_justificación_4">Justificación</h5>
+<div class="paragraph">
+<p>Elegir inglés como idioma adicional ofrece un equilibrio óptimo entre esfuerzo y beneficio. El inglés es ampliamente hablado y entendido, lo que lo convierte en la opción más estratégica para maximizar la audiencia global. Además, su inclusión resalta la dimensión educativa del juego, permitiendo a los jugadores de todo el mundo descubrir la riqueza cultural del náhuatl.</p>
+</div>
+<div class="paragraph">
+<p>Esta decisión también refuerza el posicionamiento del juego como un puente cultural y educativo, incrementando su atractivo tanto en comunidades académicas como entre entusiastas de los videojuegos de aprendizaje.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_consecuencias_4">9.4.3. Consecuencias</h4>
+<div class="paragraph">
+<p><strong>Positivas</strong>:
+  - Incremento significativo en el alcance del juego.
+  - Mayor visibilidad y apreciación del náhuatl en contextos internacionales.
+  - Potencial para obtener mayor financiamiento o reconocimiento global.</p>
+</div>
+<div class="paragraph">
+<p><strong>Negativas</strong>:
+  - Incremento en los costos y tiempos de desarrollo debido a la necesidad de traducción, localización y pruebas adicionales.
+  - Mayor complejidad en la gestión de contenido multilingüe.</p>
+</div>
+<div class="paragraph">
+<p><strong>Tareas adicionales</strong>:
+  - Contratar o colaborar con traductores y especialistas en localización.
+  - Implementar un sistema de selección de idioma en la interfaz del juego.
+  - Realizar pruebas exhaustivas para garantizar la coherencia y calidad de las traducciones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_references">References</h2>
 <div class="sectionbody">
 <div class="ulist bibliography">
@@ -996,7 +1489,7 @@ Basado en patrones y artefactos aztecas, con colores tierra y oro para evocar la
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-05 04:20:01 UTC
+Last updated 2024-12-05 23:58:29 UTC
 </div>
 </div>
 <script src="highlight/highlight.min.js"></script>
