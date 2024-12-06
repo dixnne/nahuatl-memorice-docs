@@ -13,19 +13,20 @@ Los días de la semana en náhuatl no siguen una nomenclatura estándar como en 
 **Emplear los términos náhuatl relacionados con los días de la semana** como parte integral del proyecto, con el propósito de fomentar el aprendizaje cultural y lingüístico. Para garantizar la accesibilidad, se incluirán traducciones al español e inglés dentro del juego o proyecto educativo, así como explicaciones contextualizadas de cada término.
 
 ===== Implementación:
- El proyecto usará los siguientes términos para los días de la semana en náhuatl:
-    - **Tonalli** (Domingo)
-    - **Hueyecac** (Lunes)
-    - **Mecatl** (Martes)
-    - **Xochitl** (Miércoles)
-    - **Ocelotl** (Jueves)
-    - **Cuauhtli** (Viernes)
-    - **Tonatiuh** (Sol)
-    - **Metztli** (Luna) 
-    - **Citlalin** (Estrella)
-    - **Atl** (Agua)
-    - **Tlalli** (Tierra)
-    - **Ehecatl** (Viento)
+El proyecto usará los siguientes términos para los días de la semana en náhuatl:
+
+- **Tonalli** (Domingo)
+- **Hueyecac** (Lunes)
+- **Mecatl** (Martes)
+- **Xochitl** (Miércoles)
+- **Ocelotl** (Jueves)
+- **Cuauhtli** (Viernes)
+- **Tonatiuh** (Sol)
+- **Metztli** (Luna) 
+- **Citlalin** (Estrella)
+- **Atl** (Agua)
+- **Tlalli** (Tierra)
+- **Ehecatl** (Viento)
 
 En un futuro se diseñarán herramientas educativas dentro del juego (glosarios interactivos, mini-juegos o guías) para ayudar a los jugadores a familiarizarse con estos términos y sus significados.
 

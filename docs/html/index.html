@@ -221,6 +221,28 @@ a {
 </li>
 </ul>
 </li>
+<li><a href="#_plan_de_pruebas_con_user_acceptance_testing_uat">10. Plan de Pruebas con User Acceptance Testing (UAT)</a>
+<ul class="sectlevel2">
+<li><a href="#_objetivo_del_plan_de_pruebas">10.1. Objetivo del Plan de Pruebas</a></li>
+<li><a href="#_alcance_de_las_pruebas">10.2. Alcance de las Pruebas</a>
+<ul class="sectlevel3">
+<li><a href="#_componentes_incluidos">10.2.1. Componentes Incluidos:</a></li>
+</ul>
+</li>
+<li><a href="#_componentes_excluidos">10.3. Componentes Excluidos:</a></li>
+<li><a href="#_tipos_de_pruebas">10.4. Tipos de Pruebas</a></li>
+<li><a href="#_proceso_de_uat">10.5. Proceso de UAT</a>
+<ul class="sectlevel3">
+<li><a href="#_fases_del_uat">10.5.1. Fases del UAT</a></li>
+<li><a href="#_criterios_de_aceptación">10.5.2. Criterios de Aceptación</a></li>
+</ul>
+</li>
+<li><a href="#_roles_y_responsabilidades">10.6. Roles y Responsabilidades</a></li>
+<li><a href="#_cronograma_de_pruebas">10.7. Cronograma de Pruebas</a></li>
+<li><a href="#_riesgos_y_mitigación">10.8. Riesgos y Mitigación</a></li>
+<li><a href="#_resultados_esperados">10.9. Resultados Esperados</a></li>
+</ul>
+</li>
 <li><a href="#_references">References</a></li>
 </ul>
 </div>
@@ -1033,22 +1055,48 @@ Basado en patrones y artefactos aztecas, con colores tierra y oro para evocar la
 </div>
 <div class="sect4">
 <h5 id="_implementación">Implementación:</h5>
-<div class="literalblock">
-<div class="content">
-<pre>El proyecto usará los siguientes términos para los días de la semana en náhuatl:
-   - **Tonalli** (Domingo)
-   - **Hueyecac** (Lunes)
-   - **Mecatl** (Martes)
-   - **Xochitl** (Miércoles)
-   - **Ocelotl** (Jueves)
-   - **Cuauhtli** (Viernes)
-   - **Tonatiuh** (Sol)
-   - **Metztli** (Luna)
-   - **Citlalin** (Estrella)
-   - **Atl** (Agua)
-   - **Tlalli** (Tierra)
-   - **Ehecatl** (Viento)</pre>
+<div class="paragraph">
+<p>El proyecto usará los siguientes términos para los días de la semana en náhuatl:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Tonalli</strong> (Domingo)</p>
+</li>
+<li>
+<p><strong>Hueyecac</strong> (Lunes)</p>
+</li>
+<li>
+<p><strong>Mecatl</strong> (Martes)</p>
+</li>
+<li>
+<p><strong>Xochitl</strong> (Miércoles)</p>
+</li>
+<li>
+<p><strong>Ocelotl</strong> (Jueves)</p>
+</li>
+<li>
+<p><strong>Cuauhtli</strong> (Viernes)</p>
+</li>
+<li>
+<p><strong>Tonatiuh</strong> (Sol)</p>
+</li>
+<li>
+<p><strong>Metztli</strong> (Luna)</p>
+</li>
+<li>
+<p><strong>Citlalin</strong> (Estrella)</p>
+</li>
+<li>
+<p><strong>Atl</strong> (Agua)</p>
+</li>
+<li>
+<p><strong>Tlalli</strong> (Tierra)</p>
+</li>
+<li>
+<p><strong>Ehecatl</strong> (Viento)</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>En un futuro se diseñarán herramientas educativas dentro del juego (glosarios interactivos, mini-juegos o guías) para ayudar a los jugadores a familiarizarse con estos términos y sus significados.</p>
@@ -1474,6 +1522,348 @@ Los diseños inspirados en la iconografía y mitología azteca enriquecen la exp
 </div>
 </div>
 <div class="sect1">
+<h2 id="_plan_de_pruebas_con_user_acceptance_testing_uat">10. Plan de Pruebas con User Acceptance Testing (UAT)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Versión</strong>: 1.0</p>
+</div>
+<div class="sect2">
+<h3 id="_objetivo_del_plan_de_pruebas">10.1. Objetivo del Plan de Pruebas</h3>
+<div class="paragraph">
+<p>Este plan de pruebas tiene como objetivo garantizar que <strong>Aztlán: Las Islas del Saber</strong> cumple con los requisitos funcionales, técnicos y de experiencia del usuario establecidos. Se busca validar el funcionamiento del juego desde la perspectiva de los usuarios finales, asegurando que se pueda lanzar con la confianza de que satisface sus expectativas.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alcance_de_las_pruebas">10.2. Alcance de las Pruebas</h3>
+<div class="sect3">
+<h4 id="_componentes_incluidos">10.2.1. Componentes Incluidos:</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Funcionalidades principales</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Menús (inicio, selección de idioma, configuración).</p>
+</li>
+<li>
+<p>Modo de juego principal (memorice, niveles, peleas de jefes).</p>
+</li>
+<li>
+<p>Sistema de progresión y guardado.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Idiomas</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Español.</p>
+</li>
+<li>
+<p>Inglés.</p>
+</li>
+<li>
+<p>Náhuatl.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Compatibilidad</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Web.</p>
+</li>
+<li>
+<p>Móvil (iOS y Android).</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Elementos educativos</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Precisión en la correspondencia de palabras español-náhuatl-inglés.</p>
+</li>
+<li>
+<p>Retroalimentación educativa.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_componentes_excluidos">10.3. Componentes Excluidos:</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Contenidos futuros o expansiones que no estén en esta versión.</p>
+</li>
+<li>
+<p>Integraciones con terceros que no afecten la experiencia de usuario.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tipos_de_pruebas">10.4. Tipos de Pruebas</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Pruebas Funcionales</strong>
+Validar que todas las funcionalidades cumplan con los requisitos.</p>
+</li>
+<li>
+<p><strong>Pruebas de Usabilidad</strong>
+Evaluar la facilidad de uso del juego.</p>
+</li>
+<li>
+<p><strong>Pruebas de Rendimiento</strong>
+Asegurar tiempos de carga aceptables en web y móvil.</p>
+</li>
+<li>
+<p><strong>Pruebas de Compatibilidad</strong>
+Verificar que el juego funcione correctamente en diferentes navegadores y dispositivos.</p>
+</li>
+<li>
+<p><strong>User Acceptance Testing (UAT)</strong>
+Validación final realizada por un grupo de usuarios finales seleccionados.
+Se enfocará en la experiencia general y la satisfacción con el juego.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_proceso_de_uat">10.5. Proceso de UAT</h3>
+<div class="sect3">
+<h4 id="_fases_del_uat">10.5.1. Fases del UAT</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Preparación</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Definir criterios de aceptación con base en los objetivos del juego.</p>
+</li>
+<li>
+<p>Seleccionar usuarios finales representativos (educadores, jugadores, lingüistas).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Ejecución</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Los usuarios realizarán las siguientes pruebas:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Completar el tutorial.</p>
+</li>
+<li>
+<p>Jugar al menos una isla completa en su idioma preferido.</p>
+</li>
+<li>
+<p>Probar la funcionalidad multilingüe.</p>
+</li>
+<li>
+<p>Experimentar la pelea con el jefe principal.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Recolectar feedback a través de encuestas y sesiones de observación.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Revisión</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Analizar los resultados del feedback.</p>
+</li>
+<li>
+<p>Identificar problemas o áreas de mejora.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Resolución</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Priorizar y corregir los problemas reportados.</p>
+</li>
+<li>
+<p>Implementar mejoras antes del lanzamiento.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_criterios_de_aceptación">10.5.2. Criterios de Aceptación</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Funcionalidad</strong>: Las funciones principales deben estar completamente operativas y sin errores críticos.</p>
+</li>
+<li>
+<p><strong>Usabilidad</strong>: El juego debe ser fácil de entender y usar.</p>
+</li>
+<li>
+<p><strong>Educación</strong>: Los jugadores deben sentir que están aprendiendo náhuatl de manera efectiva.</p>
+</li>
+<li>
+<p><strong>Estabilidad</strong>: No se deben presentar fallos críticos o bloqueos.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_roles_y_responsabilidades">10.6. Roles y Responsabilidades</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Rol</th>
+<th class="tableblock halign-left valign-top">Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Product Owner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supervisar el proceso de UAT y aprobar el lanzamiento.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Equipo de QA</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Coordinar las pruebas, documentar errores y validar correcciones.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usuarios Finales</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Probar el juego y proporcionar feedback detallado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Desarrolladores</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corregir los errores reportados durante la UAT.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_cronograma_de_pruebas">10.7. Cronograma de Pruebas</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Fase</th>
+<th class="tableblock halign-left valign-top">Fecha de Inicio</th>
+<th class="tableblock halign-left valign-top">Fecha de Finalización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Preparación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ejecución UAT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revisión de Feedback</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-23</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resolución</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-12-30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aprobación Final</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-01-02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-01-02</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_riesgos_y_mitigación">10.8. Riesgos y Mitigación</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Riesgo</th>
+<th class="tableblock halign-left valign-top">Mitigación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fallos críticos detectados tarde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Realizar pruebas exhaustivas antes del UAT.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feedback insuficiente o ambiguo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definir guías claras para los testers y recolectar feedback detallado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retrasos en la corrección de errores</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asignar recursos adicionales durante la fase de resolución.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_resultados_esperados">10.9. Resultados Esperados</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Validación de que el juego cumple con los requisitos funcionales y de experiencia de usuario.</p>
+</li>
+<li>
+<p>Identificación y corrección de errores antes del lanzamiento.</p>
+</li>
+<li>
+<p>Satisfacción general de los usuarios finales.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_references">References</h2>
 <div class="sectionbody">
 <div class="ulist bibliography">
@@ -1489,7 +1879,7 @@ Los diseños inspirados en la iconografía y mitología azteca enriquecen la exp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-05 23:58:29 UTC
+Last updated 2024-12-06 00:30:06 UTC
 </div>
 </div>
 <script src="highlight/highlight.min.js"></script>

@@ -1,0 +1,117 @@
+== Plan de Pruebas con User Acceptance Testing (UAT)
+
+*Versión*: 1.0  
+
+=== Objetivo del Plan de Pruebas
+
+Este plan de pruebas tiene como objetivo garantizar que *Aztlán: Las Islas del Saber* cumple con los requisitos funcionales, técnicos y de experiencia del usuario establecidos. Se busca validar el funcionamiento del juego desde la perspectiva de los usuarios finales, asegurando que se pueda lanzar con la confianza de que satisface sus expectativas.
+
+=== Alcance de las Pruebas
+
+==== Componentes Incluidos:
+
+. *Funcionalidades principales*:
+.. Menús (inicio, selección de idioma, configuración).
+.. Modo de juego principal (memorice, niveles, peleas de jefes).
+.. Sistema de progresión y guardado.
+. *Idiomas*:
+.. Español.
+.. Inglés.
+.. Náhuatl.
+. *Compatibilidad*:
+.. Web.
+.. Móvil (iOS y Android).
+. *Elementos educativos*:
+.. Precisión en la correspondencia de palabras español-náhuatl-inglés.
+.. Retroalimentación educativa.
+
+=== Componentes Excluidos:
+. Contenidos futuros o expansiones que no estén en esta versión.
+. Integraciones con terceros que no afecten la experiencia de usuario.
+
+=== Tipos de Pruebas
+
+1. *Pruebas Funcionales*  
+Validar que todas las funcionalidades cumplan con los requisitos.
+   
+2. *Pruebas de Usabilidad*  
+Evaluar la facilidad de uso del juego.
+   
+3. *Pruebas de Rendimiento*  
+Asegurar tiempos de carga aceptables en web y móvil.
+   
+4. *Pruebas de Compatibilidad*  
+Verificar que el juego funcione correctamente en diferentes navegadores y dispositivos.
+
+5. *User Acceptance Testing (UAT)*  
+Validación final realizada por un grupo de usuarios finales seleccionados.  
+Se enfocará en la experiencia general y la satisfacción con el juego.
+
+=== Proceso de UAT
+
+==== Fases del UAT
+
+1. *Preparación*:
+   * Definir criterios de aceptación con base en los objetivos del juego.
+   * Seleccionar usuarios finales representativos (educadores, jugadores, lingüistas).
+
+2. *Ejecución*:
+   * Los usuarios realizarán las siguientes pruebas:
+     ** Completar el tutorial.
+     ** Jugar al menos una isla completa en su idioma preferido.
+     ** Probar la funcionalidad multilingüe.
+     ** Experimentar la pelea con el jefe principal.
+   * Recolectar feedback a través de encuestas y sesiones de observación.
+
+3. *Revisión*:
+   * Analizar los resultados del feedback.
+   * Identificar problemas o áreas de mejora.
+
+4. *Resolución*:
+   * Priorizar y corregir los problemas reportados.
+   * Implementar mejoras antes del lanzamiento.
+
+==== Criterios de Aceptación
+* *Funcionalidad*: Las funciones principales deben estar completamente operativas y sin errores críticos.
+* *Usabilidad*: El juego debe ser fácil de entender y usar.
+* *Educación*: Los jugadores deben sentir que están aprendiendo náhuatl de manera efectiva.
+* *Estabilidad*: No se deben presentar fallos críticos o bloqueos.
+
+=== Roles y Responsabilidades
+
+[cols="2,3", options="header"]
+|===
+| Rol | Responsabilidad  
+| *Product Owner* | Supervisar el proceso de UAT y aprobar el lanzamiento.  
+| *Equipo de QA* | Coordinar las pruebas, documentar errores y validar correcciones.  
+| *Usuarios Finales* | Probar el juego y proporcionar feedback detallado.  
+| *Desarrolladores* | Corregir los errores reportados durante la UAT.  
+|===
+
+=== Cronograma de Pruebas
+
+[cols="3,3,3", options="header"]
+|===
+| Fase | Fecha de Inicio | Fecha de Finalización  
+| Preparación | 2024-12-10 | 2024-12-12  
+| Ejecución UAT | 2024-12-13 | 2024-12-20  
+| Revisión de Feedback | 2024-12-21 | 2024-12-23  
+| Resolución | 2024-12-24 | 2024-12-30  
+| Aprobación Final | 2025-01-02 | 2025-01-02  
+|===
+
+=== Riesgos y Mitigación
+
+[cols="2,3", options="header"]
+|===
+| Riesgo | Mitigación  
+| Fallos críticos detectados tarde | Realizar pruebas exhaustivas antes del UAT.  
+| Feedback insuficiente o ambiguo | Definir guías claras para los testers y recolectar feedback detallado.  
+| Retrasos en la corrección de errores | Asignar recursos adicionales durante la fase de resolución.  
+|===
+
+=== Resultados Esperados
+
+* Validación de que el juego cumple con los requisitos funcionales y de experiencia de usuario.
+* Identificación y corrección de errores antes del lanzamiento.
+* Satisfacción general de los usuarios finales.
